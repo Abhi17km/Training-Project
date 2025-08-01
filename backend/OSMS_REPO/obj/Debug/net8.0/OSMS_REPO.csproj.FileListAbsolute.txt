@@ -1,0 +1,15 @@
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_REPO\bin\Debug\net8.0\OSMS_REPO.deps.json
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_REPO\bin\Debug\net8.0\OSMS_REPO.dll
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_REPO\bin\Debug\net8.0\OSMS_REPO.pdb
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_REPO\bin\Debug\net8.0\OSMS_DAL.dll
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_REPO\bin\Debug\net8.0\OSMS_DAL.pdb
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_REPO\obj\Debug\net8.0\OSMS_REPO.csproj.AssemblyReference.cache
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_REPO\obj\Debug\net8.0\OSMS_REPO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_REPO\obj\Debug\net8.0\OSMS_REPO.AssemblyInfoInputs.cache
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_REPO\obj\Debug\net8.0\OSMS_REPO.AssemblyInfo.cs
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_REPO\obj\Debug\net8.0\OSMS_REPO.csproj.CoreCompileInputs.cache
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_REPO\obj\Debug\net8.0\OSMS_REPO.csproj.Up2Date
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_REPO\obj\Debug\net8.0\OSMS_REPO.dll
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_REPO\obj\Debug\net8.0\refint\OSMS_REPO.dll
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_REPO\obj\Debug\net8.0\OSMS_REPO.pdb
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_REPO\obj\Debug\net8.0\ref\OSMS_REPO.dll

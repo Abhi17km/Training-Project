@@ -1,0 +1,119 @@
+<div  class="vh-100 d-flex justify-content-center align-items-center">
+  <form
+    #signupForm="ngForm"
+    (ngSubmit)="onSubmit(signupForm)"
+    class="bg-white p-4 rounded shadow w-100"
+    style="max-width: 450px"
+    novalidate
+  >
+    <h3 class="text-center mb-4">Sign Up</h3>
+
+    <!-- Username -->
+    <div class="mb-3">
+      <label for="username" class="form-label">Username</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        class="form-control"
+        [(ngModel)]="signupData.username"
+        required
+        minlength="5"
+        maxlength="12"
+        #username="ngModel"
+        placeholder="Enter username"
+      />
+      <div *ngIf="username.invalid && username.touched" class="text-danger mt-1">
+        <small *ngIf="username.errors?.['required']">Username is required.</small>
+        <small *ngIf="username.errors?.['minlength']">Minimum 4 characters.</small>
+        <small *ngIf="username.errors?.['maxlength']">Maximum 12 characters.</small>
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="form-control"
+        [(ngModel)]="signupData.email"
+        required
+        pattern="^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        #email="ngModel"
+        placeholder="example@example.com"
+      />
+      <div *ngIf="email.invalid && email.touched" class="text-danger mt-1">
+        <small *ngIf="email.errors?.['required']">Email is required.</small>
+        <small *ngIf="email.errors?.['pattern']">Invalid email format.</small>
+      </div>
+    </div>
+
+    <!-- Password -->
+   <div class="mb-3">
+  <label for="password" class="form-label">Password</label>
+  <input
+    type="password"
+    id="password"
+    name="password"
+    class="form-control"
+    [(ngModel)]="signupData.password"
+    required
+    #password="ngModel"
+    placeholder="At least 8 characters, uppercase, number, symbol"
+  />
+  <div *ngIf="password.touched" class="text-danger mt-2">
+    <small *ngIf="password.errors?.['required']">Password is required.</small>
+    <div *ngIf="signupData.password">
+      <small *ngFor="let msg of passwordErrors">• {{ msg }}</small>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Phone -->
+   <div class="mb-3">
+  <label for="phone" class="form-label">Phone</label>
+  <input
+  type="tel"
+  id="phone"
+  name="phone"
+  class="form-control"
+  [(ngModel)]="signupData.phone"
+  required
+  pattern="^[0-9]{10}$"
+  #phone="ngModel"
+  maxlength="10"
+  placeholder="10-digit number"
+  inputmode="numeric"
+  onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+/>
+
+  <div *ngIf="phone.touched" class="text-danger mt-1">
+    <small *ngIf="phone.errors?.['required']">Phone number is required.</small>
+    
+    <small *ngIf="signupData.phone && phoneDigitsLeft > 0">
+     Enter  {{ phoneDigitsLeft }} more digits
+    </small>
+  </div>
+</div>
+
+
+    <!-- Submit -->
+    <button type="submit" class="btn btn-primary w-100" (click)="openPopup()" [disabled]="signupForm.invalid">
+      Sign Up
+    </button>
+    <div *ngIf="showPopup()" class="popup-overlay">
+      <div class="popup-content">
+        <h2>Signup successful</h2>
+      </div>
+    </div>
+
+    <div class="text-center mt-3">
+      <span>Already have an account?</span>
+   <a routerLink="/login"  [queryParamsHandling]="'preserve'" class="text-decoration-none fw-bold ms-1" >Login</a>
+
+    </div>
+  </form>
+</div>

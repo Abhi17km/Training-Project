@@ -1,0 +1,64 @@
+<!-- carousel-->
+<div class="banner-carousel">
+  <button class="arrow left" (click)="prev()" aria-label="Previous banner">&#10094;</button>
+
+  <!-- Safe rendering logic -->
+  <ng-container *ngIf="banners.length > 0">
+    <ng-container *ngIf="banners[current]?.link; else plainImage">
+
+      <a [href]="banners[current].link" tabindex="-1">
+        <img 
+          [src]="banners[current].image" 
+          [alt]="banners[current].alt" 
+          class="slider-img" 
+          width="900"
+          height="100"
+        />
+      </a>
+    </ng-container>
+    <ng-template #plainImage>
+      <img 
+        [src]="banners[current].image" 
+        [alt]="banners[current].alt" 
+        class="slider-img" 
+        width="900"
+        height="100"
+      />
+      <pre style="color: red;">
+        {{ banners[current] | json }}
+    </pre>
+
+    </ng-template>
+  </ng-container>
+
+  <button class="arrow right" (click)="next()" aria-label="Next banner">&#10095;</button>
+
+  <div class="dots">
+    <span 
+      *ngFor="let banner of banners; let i = index" 
+      class="dot" 
+      [class.active]="i === current" 
+      (click)="goTo(i)"
+      [attr.aria-label]="'Go to banner ' + (i+1)">
+    </span>
+  </div>
+</div>
+
+<!-- Categories Section -->
+<div class="featured-row-container">
+  <h2 class="featured-row-title">Categories</h2>
+  <div class="featured-row-list">
+    <div 
+      class="featured-product-card"
+      *ngFor="let category of categories"
+      (click)="onCategoryClick(category)"
+      tabindex="0"
+      role="button"
+      [attr.aria-label]="'Browse category ' + category.categoryName"
+    >
+      <!-- <img [src]="category.image" [alt]="category.name" class="featured-product-img" /> -->
+      <div class="featured-product-name">{{ category.categoryName }}</div>
+    </div>
+  </div>
+</div>
+

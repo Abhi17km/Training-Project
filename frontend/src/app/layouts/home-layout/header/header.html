@@ -1,0 +1,22 @@
+<header class="header">
+  <div class="left-section">
+    <button class="hamburger" (click)="onToggleSidebar()" aria-label="Toggle sidebar">
+      &#9776; <!-- Unicode hamburger icon -->
+    </button>
+    <span class="logo"><a routerLink="/home-layout/home">Kartazon</a></span>
+    <!-- <span class="logo">Shopazon</span> -->
+  </div>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search products..."
+    [(ngModel)]="searchTerm"
+    (keyup.enter)="onSearch(searchTerm)" />
+    
+    <button>🔍</button>
+  </div>
+
+  <div class="right-section">
+    <span>Hello, <i>{{ user?.username || 'User' }}</i></span>
+  </div>
+</header>
+

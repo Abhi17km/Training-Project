@@ -1,0 +1,134 @@
+.cart-container {
+  max-width: 1000px;
+  margin: 3rem auto;
+  background-color: #f8fcff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cart-header h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #0d6efd;
+}
+
+.cart-item {
+  background: #ffffff;
+  border-left: 5px solid #0d6efd;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr auto;
+  gap: 1rem;
+  align-items: center;
+}
+
+.item-details p {
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.item-details strong {
+  color: #444;
+}
+
+.item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.item-quantity button {
+  background-color: #dee2e6;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  transition: 0.2s;
+}
+
+.item-quantity button:hover {
+  background-color: #ced4da;
+}
+
+.item-price,
+.item-total {
+  font-weight: 600;
+  color: #222;
+  font-size: 15px;
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  color: #dc3545;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.remove-btn:hover {
+  color: #a71d2a;
+  text-decoration: underline;
+}
+
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+.subtotal {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.place-order {
+  background-color: #198754;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background 0.3s;
+}
+
+.place-order:hover {
+  background-color: #157347;
+}
+
+.empty-message {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 2rem;
+  color: #6c757d;
+}
+
+.back-to-shop {
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.back-to-shop:hover {
+  text-decoration: underline;
+}

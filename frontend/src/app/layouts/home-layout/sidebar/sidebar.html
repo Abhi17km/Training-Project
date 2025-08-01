@@ -1,0 +1,39 @@
+<!-- 
+  <nav class="nav-section">
+   
+    <a routerLink="/orders" routerLinkActive="active">
+      📦 View Orders
+    </a>
+    <a routerLink="/cart" routerLinkActive="active">
+      🛒 View Cart
+    </a>
+    <a (click)="logout()">
+      🔓 Logout
+    </a>
+  </nav> -->
+<nav class="sidebar">
+  <ul class="menu">
+    <li>
+      <a routerLink="/home-layout/home" routerLinkActive="active">
+         🏠 Home
+      </a>
+      <a routerLink="/home-layout/profile" routerLinkActive="active">
+        👤 Profile
+      </a>
+    </li>
+    <li>
+      <a routerLink="/home-layout/orders" routerLinkActive="active">
+        📦 View Orders
+      </a>
+    </li>
+    <li>
+      <a routerLink="/home-layout/cart" routerLinkActive="active">
+        🛒 View Cart
+      </a>
+    </li>
+    <li>
+      <a (click)="logout()" class="logout-link">🚪 Logout</a>
+    </li>
+  </ul>
+</nav>
+

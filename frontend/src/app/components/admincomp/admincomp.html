@@ -1,0 +1,37 @@
+<!-- Top Navbar -->
+<nav class="navbar">
+  <h1>Admin Dashboard</h1>
+  <button class="logout-button" (click)="logout()">Logout</button>
+</nav>
+
+
+<!-- Dashboard Content -->
+<div class="dashboard-container">
+  <h2 class="welcome-msg">Welcome, Admin!</h2>
+
+  <div class="card-grid">
+    <div class="dashboard-card" (click)="goToProducts()">
+      <img src="assets/ManageProd.png" alt="Products">
+      <h3>Manage Products</h3>
+      <p>Add, update, delete products</p>
+    </div>
+
+    <div class="dashboard-card" (click)="goToCategories()">
+      <img src="assets/ManageCategories.png" alt="Categories">
+      <h3>Manage Categories</h3>
+      <p>Create and organize categories</p>
+    </div>
+
+    <div class="dashboard-card" (click)="goToOrders()">
+      <img src="assets/ViewOrders.png" alt="Orders">
+      <h3>View Orders</h3>
+      <p>Track customer orders</p>
+    </div>
+
+    <!-- <div class="dashboard-card" (click)="goToCustomers()">
+      <img src="assets/Customers.png" alt="Customers">
+      <h3>Customers</h3>
+      <p>Manage customer info</p>
+    </div> -->
+  </div>
+</div>

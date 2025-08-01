@@ -1,0 +1,22 @@
+<div class="container mt-4">
+  <h2>Your Orders</h2>
+
+  <div *ngIf="orderItems.length === 0" class="text-muted">No orders found.</div>
+
+  <div *ngFor="let order of orderItems" class="card p-3 mb-3 shadow-sm">
+    <h4>{{ order.productName }}</h4>
+
+    <p><strong>Order ID:</strong> {{ order.orderId }}</p>
+    <p><strong>Product ID:</strong> {{ order.productId }}</p>
+    <p><strong>Quantity:</strong> {{ order.quantity }}</p>
+    <p><strong>Price:</strong> ₹{{ order.price }}</p>
+
+    <div class="track d-flex justify-content-between mt-3 mb-2">
+      <div class="step" [class.active]="getStep(order.deliveryStatus) >= 1">Order Placed</div>
+      <div class="step" [class.active]="getStep(order.deliveryStatus) >= 2">Out for Delivery</div>
+      <div class="step" [class.active]="getStep(order.deliveryStatus) >= 3">Delivered</div>
+    </div>
+
+    <p><strong>Status:</strong> {{ order.deliveryStatus }}</p>
+  </div>
+</div>

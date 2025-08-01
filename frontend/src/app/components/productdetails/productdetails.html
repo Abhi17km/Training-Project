@@ -1,0 +1,68 @@
+<div class="product-detail-container">
+  <!-- <div *ngIf="loading" class="loading">
+    <div class="spinner"></div>
+    <p>Loading product details...</p>
+  </div> -->
+
+  <div *ngIf="product" class="product-detail">
+
+    <div class="product-content">
+      <div class="product-image-section">
+        <div class="main-image">
+          <img [src]="getImageUrl(product.imageUrl)" [alt]="product.productName">
+        </div>
+      </div>
+
+      <div class="product-info-section">
+        <div class="product-header">
+          <h1 class="product-title">{{ product.productName }}</h1>
+          <div class="product-price">₹{{ product.productPrice }}</div>
+        </div>
+
+        <div *ngIf="product.productDesc" class="product-description">
+          <h3>Description</h3>
+          <p>{{ product.productDesc }}</p>
+        </div>
+
+        <div class="product-actions">
+          <div class="quantity-selector">
+            <label for="quantity">Quantity:</label>
+            <div class="quantity-controls">
+              <button class="quantity-btn" (click)="decreaseQuantity()" [disabled]="quantity <= 1">-</button>
+              <input 
+                type="number" 
+                id="quantity" 
+                [(ngModel)]="quantity" 
+                min="1" 
+                max="99"
+                class="quantity-input"
+              >
+              <button class="quantity-btn" (click)="increaseQuantity(product)">+</button>
+            </div>
+          </div>
+
+          <div class="action-buttons">
+            <button class="add-to-cart-btn" (click)="addToCart()">
+              🛒 Add to Cart
+            </button>
+            <button class="buy-now-btn" (click)="buyNow()">
+              Buy Now
+            </button>
+          </div>
+        </div>
+
+        <div class="product-meta">
+          <div class="meta-item">
+            <strong>Category:</strong>
+            <span *ngIf="product.category">{{ product.category.categoryName }}</span>
+            <span *ngIf="!product.category">Uncategorized</span>
+          </div>
+          <div class="meta-item">
+            <strong>Product ID:</strong>
+            <span>{{ product.productId }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 

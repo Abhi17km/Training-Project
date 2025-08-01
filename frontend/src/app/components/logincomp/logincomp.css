@@ -1,0 +1,156 @@
+/* .login-wrapper {
+  display: flex;
+  justify-content: center;
+  background-image: url("https://www.shutterstock.com/image-vector/group-5-colorful-shopping-bags-260nw-59531758.jpg");
+  align-items: center;
+  height: 100vh;
+  background: #f5f7fa;
+  padding: 20px;
+} */
+ #bgimage{
+  background-image: url("https://static.vecteezy.com/system/resources/previews/001/410/750/original/cyber-monday-happy-shopping-background-free-vector.jpg");
+background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+
+ }
+ .popup-overlay {
+  position: fixed; /* Stays in place even when scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  display: flex; /* Use flexbox for easy centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 1000; /* Ensures it's on top of other content */
+}
+.popup-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* More prominent shadow */
+  text-align: center;
+  width: 90%; /* Responsive width */
+  max-width: 450px; /* Maximum width for larger screens */
+  transform: scale(0.95); /* Slight scale for animation */
+  opacity: 0; /* Start hidden for animation */
+  animation: fadeInPop 0.3s ease-out forwards; /* Apply animation */
+}
+.popup-content h2 {
+  color: #28a745; /* Green color for heading */
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.close-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #dc3545; /* Red color for close button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #c82333;
+}
+@keyframes fadeInPop {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+
+  
+   /* ✅ update filename */
+
+ 
+  background-position: center;
+}
+.login-form {
+  background-color: #ffffff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: 600;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #0077cc;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.forgot-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.forgot-link a {
+  color: #0077cc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot-link a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,63 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #232f3e;
+  color: white;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 60%;
+  padding: 6px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+.logo a {
+  text-decoration: none;    /* removes underline */
+  color: inherit;           /* inherits color from parent (often white) */
+}
+
+.logo a:hover {
+  color: inherit;           /* prevents blue on hover */
+  text-decoration: none;    /* just in case */
+}
+
+
+.search-bar button {
+  padding: 6px 12px;
+  border: none;
+  background-color: orange;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.right-section {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}

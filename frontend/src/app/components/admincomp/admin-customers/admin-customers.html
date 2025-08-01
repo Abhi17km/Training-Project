@@ -1,0 +1,26 @@
+<div class="p-6">
+  <h2 class="text-2xl font-semibold mb-4 text-blue-700">Manage Customers</h2>
+
+  <div *ngIf="customers.length > 0; else noData">
+    <table class="min-w-full bg-white border border-gray-300 rounded shadow">
+      <thead>
+        <tr class="bg-gray-100 text-gray-700">
+          <th class="py-2 px-4 border-b">ID</th>
+          <th class="py-2 px-4 border-b">Name</th>
+          <th class="py-2 px-4 border-b">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let customer of customers" class="text-center hover:bg-gray-50">
+          <td class="py-2 px-4 border-b">{{customer.userId}}</td>
+          <td class="py-2 px-4 border-b">{{customer.userName}}</td>
+          <td class="py-2 px-4 border-b">{{customer.email}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <ng-template #noData>
+    <p class="text-center text-gray-500">No customers found.</p>
+  </ng-template>
+</div>

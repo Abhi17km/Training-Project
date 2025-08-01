@@ -1,0 +1,47 @@
+<div class="profile-container">
+
+  <div class="profile-card">
+    <h2 class="profile-name">Your Profile</h2>
+    <br>
+  
+
+    <div class="profile-info">
+      <div class="field-row">
+        <div class="field-label">Username</div>
+        <div class="field-value">
+            <input *ngIf="editMode['username']" [(ngModel)]="user.username" />
+            <span *ngIf="!editMode['username']">{{ user.username }}</span>
+
+        </div>
+        <i class="edit-icon"(click)="enableEdit('username')">✎</i>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Email</div>
+        <div class="field-value">
+            <input *ngIf="editMode['email']" [(ngModel)]="user.email" type="email" />
+            <span *ngIf="!editMode['email']">{{ user.email }}</span>
+        </div>
+        <i class="edit-icon" (click)="enableEdit('email')">✎</i>
+      </div>
+    
+      <div class="field-row">
+        <div class="field-label">Phone</div>
+        <div class="field-value">
+             <input *ngIf="editMode['phone']" [(ngModel)]="user.phone" type="tel" />
+             <span *ngIf="!editMode['phone']">{{ user.phone }}</span>
+        </div>
+       <i class="edit-icon" (click)="enableEdit('phone')">✎</i>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Password</div>
+        <div class="field-value">{{ showPassword ? user?.password : '******' }}</div>
+       <i class="edit-icon" (click)="togglePassword()">  {{ showPassword ? '🙈' : '🙉' }}</i>
+      </div>
+     
+  </div>
+  <!-- SAVE BUTTON -->
+<div class="save-container" *ngIf="anyFieldBeingEdited()">
+  <button class="save-btn" (click)="saveChanges()">💾 Save Changes</button>
+</div>
+
+</div>

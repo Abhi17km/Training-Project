@@ -1,0 +1,14 @@
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_DAL\bin\Debug\net8.0\OSMS_DAL.deps.json
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_DAL\bin\Debug\net8.0\OSMS_DAL.runtimeconfig.json
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_DAL\bin\Debug\net8.0\OSMS_DAL.dll
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_DAL\bin\Debug\net8.0\OSMS_DAL.pdb
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_DAL\obj\Debug\net8.0\OSMS_DAL.csproj.AssemblyReference.cache
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_DAL\obj\Debug\net8.0\OSMS_DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_DAL\obj\Debug\net8.0\OSMS_DAL.AssemblyInfoInputs.cache
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_DAL\obj\Debug\net8.0\OSMS_DAL.AssemblyInfo.cs
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_DAL\obj\Debug\net8.0\OSMS_DAL.csproj.CoreCompileInputs.cache
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_DAL\obj\Debug\net8.0\OSMS_DAL.dll
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_DAL\obj\Debug\net8.0\refint\OSMS_DAL.dll
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_DAL\obj\Debug\net8.0\OSMS_DAL.pdb
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_DAL\obj\Debug\net8.0\OSMS_DAL.genruntimeconfig.cache
+C:\Users\AbhishekKM\Documents\handson\OnlineShoppingManagementSystem\OSMS_DAL\obj\Debug\net8.0\ref\OSMS_DAL.dll

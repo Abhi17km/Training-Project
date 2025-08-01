@@ -1,0 +1,31 @@
+<div *ngIf="loading" class="loading-spinner">
+  Loading products...
+</div>
+
+<!-- Show products if available -->
+<div *ngIf="!loading && products && products.length > 0" class="products-grid">
+  <div 
+    *ngFor="let product of products" 
+    class="product-card"
+  >
+    <div class="product-image">
+      <img [src]="getImageUrl(product.imageUrl)" [alt]="product.productName ">
+    </div>
+    <div class="product-info">
+      <h3 class="product-title">{{ product.productName }}</h3>
+      <p class="product-price">₹{{ product.productPrice }}</p>
+
+      <p *ngIf="product.productDesc" class="product-description">
+        {{ product.productDesc.length > 100 
+            ? (product.productDesc | slice: 0: 100) + '...' 
+            : product.productDesc }}
+      </p>
+       <button class="view-btn" (click)="viewProduct(product)">View Product</button>
+    </div>
+  </div>
+</div>
+
+<!-- Show message if no products -->
+<div *ngIf="!loading && products && products.length === 0" class="no-products">
+  <p>No products found for this category.</p>
+</div>

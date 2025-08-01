@@ -1,0 +1,31 @@
+<div class="fullscreen-wrapper">
+  <div class="overlay d-flex flex-column justify-content-center align-items-center text-center">
+    <h1 class="text-white mt-4 mb-5 fw-bold">Welcome to Shopping Portal</h1>
+
+    <div class="card-row">
+      <!-- User Card -->
+      <div class="glass-card">
+        <h3 class="mb-3">User</h3>
+        <a [routerLink]="'/login'" [queryParams]="{ role: 'user' }">
+          <img
+            src="https://www.svgrepo.com/show/220843/user-profile.svg"
+            alt="User Logo"
+            class="admin-logo mb-3 hover-scale"
+          />
+        </a>
+      </div>
+
+      <!-- Admin Card -->
+      <div class="glass-card">
+        <h3 class="mb-3">Admin</h3>
+        <a [routerLink]="'/login'" [queryParams]="{ role: 'admin' }">
+          <img
+            src="https://tse2.mm.bing.net/th/id/OIP.y8XNlGrW_8VslDz0Yz61SwAAAA"
+            alt="Admin Logo"
+            class="admin-logo mb-3 hover-scale"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

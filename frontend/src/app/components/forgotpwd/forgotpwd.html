@@ -1,0 +1,118 @@
+<div  class="vh-100 d-flex justify-content-center align-items-center">
+  <form
+    #changePasswordForm="ngForm"
+    (ngSubmit)="onSubmit(changePasswordForm)"
+    class="bg-white p-4 rounded shadow w-100"
+    style="max-width: 450px"
+  >
+    <h3 class="text-center mb-4">Reset Password</h3>
+
+    <!-- EMAIL SECTION -->
+    <ng-container *ngIf="!showOtpSection && !showPasswordsection">
+      <!-- Email Field -->
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input
+          type="email"
+          [(ngModel)]="email"
+          id="email"
+          name="email"
+          class="form-control"
+          placeholder="Enter your email"
+          required
+          #emailRef="ngModel"
+        />
+        <div class="text-danger mt-1" *ngIf="emailRef.invalid && emailRef.touched">
+          Email ID is required
+        </div>
+      </div>
+
+      <!-- Send OTP Button -->
+      <button
+        type="button"
+        class="btn btn-primary w-100"
+        [disabled]="!emailRef.valid"
+        (click)="onSendOtp()"
+      >
+        Send OTP
+      </button>
+    </ng-container>
+
+    <!-- OTP SECTION -->
+    <ng-container *ngIf="showOtpSection&& !showPasswordsection ">
+      <!-- OTP Field -->
+      <div class="mb-3">
+        <label for="otp" class="form-label">OTP</label>
+        <input
+          type="text"
+          id="otp"
+          name="otp"
+          [(ngModel)]="otp"
+          class="form-control"
+          placeholder="Enter OTP"
+          required
+          minlength="4"
+          maxlength="4"
+          #otpRef="ngModel"
+        />
+        <div *ngIf="otpRef.invalid && otpRef.touched" class="text-danger mt-1">
+          OTP is required.
+        </div>
+      </div>
+
+      <!-- Verify OTP Button -->
+      <button
+        type="button"
+        class="btn btn-primary w-100"
+        [disabled]="!otpRef.valid"
+        (click)="onVerifyOtp()"
+      >
+        Verify OTP
+      </button>
+    </ng-container>
+     <ng-container *ngIf="showPasswordsection==true">
+      <!-- Email Field -->
+      <div class="mb-3">
+        <label for="newPassword" class="form-label">New Password</label>
+        <input
+          type="password"
+          id="newPassword"
+          name="newPassword"
+          class="form-control"
+           [(ngModel)]="newPassword"
+          placeholder="Enter new password"
+          required
+          minlength="6"
+          #newPassRef="ngModel"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="confirmPassword" class="form-label">Confirm Password</label>
+        <input
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+        [(ngModel)]="confirmPassword"
+        class="form-control"
+        ngModel
+        placeholder="Confirm your password"
+        required
+        #confirmPassRef="ngModel"
+        />
+        <div class="text-danger mt-1" *ngIf="newPassRef.value !== confirmPassRef.value && confirmPassRef.touched">
+          Passwords do not match.
+        </div>
+      </div>
+
+      <!-- Send OTP Button -->
+      <button
+        type="button"
+        class="btn btn-primary w-100"
+         [disabled]="!newPassRef.valid || !confirmPassRef.valid || newPassRef.value !== confirmPassRef.value"
+        (click)="onChange()"
+      >
+        Reset password
+      </button>
+    </ng-container>
+  </form>
+</div>

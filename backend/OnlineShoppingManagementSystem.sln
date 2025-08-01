@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSMS_DAL", "OSMS_DAL\OSMS_DAL.csproj", "{59760841-43D3-4756-8EEB-AE4FE4B293C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSMS_REPO", "OSMS_REPO\OSMS_REPO.csproj", "{6A4EE45A-4DD9-45E0-9E19-AB46D7C71467}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSMS_API", "OSMS_API\OSMS_API.csproj", "{9BAA42CF-15F2-44F4-BE8A-3709CA82D2B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59760841-43D3-4756-8EEB-AE4FE4B293C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59760841-43D3-4756-8EEB-AE4FE4B293C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59760841-43D3-4756-8EEB-AE4FE4B293C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59760841-43D3-4756-8EEB-AE4FE4B293C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A4EE45A-4DD9-45E0-9E19-AB46D7C71467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A4EE45A-4DD9-45E0-9E19-AB46D7C71467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A4EE45A-4DD9-45E0-9E19-AB46D7C71467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A4EE45A-4DD9-45E0-9E19-AB46D7C71467}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BAA42CF-15F2-44F4-BE8A-3709CA82D2B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BAA42CF-15F2-44F4-BE8A-3709CA82D2B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BAA42CF-15F2-44F4-BE8A-3709CA82D2B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BAA42CF-15F2-44F4-BE8A-3709CA82D2B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {153FAF67-8C2A-4B21-BDF1-840E58359E87}
+	EndGlobalSection
+EndGlobal

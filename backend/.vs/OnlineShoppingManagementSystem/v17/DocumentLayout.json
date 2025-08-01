@@ -1,0 +1,115 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\AbhishekKM\\Documents\\handson\\OnlineShoppingManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9BAA42CF-15F2-44F4-BE8A-3709CA82D2B2}|OSMS_API\\OSMS_API.csproj|c:\\users\\abhishekkm\\documents\\handson\\onlineshoppingmanagementsystem\\osms_api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BAA42CF-15F2-44F4-BE8A-3709CA82D2B2}|OSMS_API\\OSMS_API.csproj|solutionrelative:osms_api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4EE45A-4DD9-45E0-9E19-AB46D7C71467}|OSMS_REPO\\OSMS_REPO.csproj|c:\\users\\abhishekkm\\documents\\handson\\onlineshoppingmanagementsystem\\osms_repo\\repo\\iproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4EE45A-4DD9-45E0-9E19-AB46D7C71467}|OSMS_REPO\\OSMS_REPO.csproj|solutionrelative:osms_repo\\repo\\iproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/OSMS_DB/True/SqlTable/dbo.Products.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/OSMS_DB/True/SqlTable/dbo.Category.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A4EE45A-4DD9-45E0-9E19-AB46D7C71467}|OSMS_REPO\\OSMS_REPO.csproj|c:\\users\\abhishekkm\\documents\\handson\\onlineshoppingmanagementsystem\\osms_repo\\repo\\productrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A4EE45A-4DD9-45E0-9E19-AB46D7C71467}|OSMS_REPO\\OSMS_REPO.csproj|solutionrelative:osms_repo\\repo\\productrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 239,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\AbhishekKM\\Documents\\handson\\OnlineShoppingManagementSystem\\OSMS_API\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "OSMS_API\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\AbhishekKM\\Documents\\handson\\OnlineShoppingManagementSystem\\OSMS_API\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "OSMS_API\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAvwJwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T09:27:53.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IProduct.cs",
+              "DocumentMoniker": "C:\\Users\\AbhishekKM\\Documents\\handson\\OnlineShoppingManagementSystem\\OSMS_REPO\\REPO\\IProduct.cs",
+              "RelativeDocumentMoniker": "OSMS_REPO\\REPO\\IProduct.cs",
+              "ToolTip": "C:\\Users\\AbhishekKM\\Documents\\handson\\OnlineShoppingManagementSystem\\OSMS_REPO\\REPO\\IProduct.cs",
+              "RelativeToolTip": "OSMS_REPO\\REPO\\IProduct.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAvwBYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T08:33:03.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dbo.Category [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/OSMS_DB/True/SqlTable/dbo.Category.sql",
+              "ToolTip": "dbo.Category [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-08-01T06:10:03.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "dbo.Products [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/OSMS_DB/True/SqlTable/dbo.Products.sql",
+              "ToolTip": "dbo.Products [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-08-01T06:05:25.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductRepo.cs",
+              "DocumentMoniker": "C:\\Users\\AbhishekKM\\Documents\\handson\\OnlineShoppingManagementSystem\\OSMS_REPO\\REPO\\ProductRepo.cs",
+              "RelativeDocumentMoniker": "OSMS_REPO\\REPO\\ProductRepo.cs",
+              "ToolTip": "C:\\Users\\AbhishekKM\\Documents\\handson\\OnlineShoppingManagementSystem\\OSMS_REPO\\REPO\\ProductRepo.cs",
+              "RelativeToolTip": "OSMS_REPO\\REPO\\ProductRepo.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T09:54:20.105Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 46,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

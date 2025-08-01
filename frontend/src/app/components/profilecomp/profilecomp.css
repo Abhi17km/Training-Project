@@ -1,0 +1,94 @@
+.profile-container {
+  max-width: 800px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+
+.tab-bar {
+  display: flex;
+  gap: 30px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.tab-bar span {
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.tab-bar .active {
+  border-bottom: 3px solid #444;
+  font-weight: bold;
+}
+
+.profile-card {
+  border: 2px solid #3b5998;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.profile-name {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.username {
+  text-align: center;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.field-label {
+  font-weight: bold;
+  color: #333;
+  flex: 1;
+}
+
+.field-value {
+  color: #555;
+  flex: 2;
+}
+
+.edit-icon {
+  cursor: pointer;
+  color: #666;
+  font-size: 14px;
+}
+.save-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.save-btn {
+  background-color: #2d72d9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.save-btn:hover {
+  background-color: #1b4fa3;
+}
