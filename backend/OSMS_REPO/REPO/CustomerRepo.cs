@@ -166,7 +166,7 @@ namespace OSMS_REPO.REPO
             try
             {
                 smtpClient.Connect("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-                smtpClient.Authenticate("mailbot113@gmail.com", "kjwd khmc agca ccqo");
+                smtpClient.Authenticate("mailbot113@gmail.com", "xxxx xxxx xxxx xxxx");
                 smtpClient.Send(message);
                 smtpClient.Disconnect(true);
 
